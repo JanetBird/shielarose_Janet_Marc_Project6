@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import firebase from '../firebase';
+import { withRouter } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import GoBackToRegistriesDashNav from './GoBackToRegistriesDashNav';
@@ -13,6 +14,7 @@ class GuestPage extends Component {
         super();
         this.state = {
             regInfo: {},
+            totalReg: {},
             ideas: {},
             contributionAmount: '',
             firstName: '',
@@ -24,10 +26,11 @@ class GuestPage extends Component {
     }
     
     componentDidMount() {
-        const registryId = this.props.match.params.registry_id //registryId now available in params
+        const registryId = this.props.match.params.registry_id;//registryId now available in params
         regRef.on('value', (snapshot) => {
             if (snapshot.val() !== null) {
                 this.setState({
+                    totalReg: snapshot.val(), //All registries
                     regInfo: snapshot.val()[registryId] || {}, //saved snapshot in regInfo 
                 }, () => {
                     this.setState({
@@ -36,6 +39,15 @@ class GuestPage extends Component {
                 })
             }
         })
+    }
+
+    componentDidUpdate(prevProps) {
+        if (this.props.guestId !== prevProps.guestId) {
+            this.setState({
+                regInfo: this.state.totalReg[this.props.guestId],
+                ideas: this.state.totalReg[this.props.guestId].Ideas || {}
+            })
+        }
     }
 
     componentWillUnmount() {
@@ -228,4 +240,5 @@ class GuestPage extends Component {
     }
 }
 
-export default GuestPage;
+// export default GuestPage;
+export default withRouter(GuestPage);

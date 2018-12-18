@@ -8,7 +8,8 @@ const Nav = ({
     filteredReg,
     handleSearchChange,
     handleSearchSubmit,
-    searchInput
+    searchInput,
+    handleFilteredClick
 }) => {
     return (
         <nav className="clearfix">
@@ -25,7 +26,8 @@ const Nav = ({
                             handleSearchChange={handleSearchChange}
                             handleSearchSubmit={handleSearchSubmit}
                             searchInput={searchInput}
-                            resetSearchParams={resetSearchParams}
+                            handleFilteredClick={handleFilteredClick}
+
                         />
                         {/* <p>Welcome, {displayName} </p> */}
                     </li> 

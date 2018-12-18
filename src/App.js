@@ -36,6 +36,7 @@ class App extends Component {
       searchReg: [],
       searchInput:'',
       finalInput:'',
+      guestId: '',
       noRegistries: false
     }
   }
@@ -241,6 +242,13 @@ class App extends Component {
     })
   }
 
+  handleFilteredClick = (id) => {
+    this.setState({
+      guestId: id
+    });
+    this.resetSearchParams();
+  }
+
   render() {
      
     return (
@@ -271,6 +279,7 @@ class App extends Component {
               handleSearchChange={this.handleSearchChange}
               handleSearchSubmit={this.handleSearchSubmit}
               searchInput={this.state.searchInput}
+              handleFilteredClick={this.handleFilteredClick}
             />
           </div>
           :
@@ -301,7 +310,9 @@ class App extends Component {
                 </div>
                 )   
             }/>
-            <Route exact path="/guest/:registry_id" component={GuestPage}/>
+            <Route exact path="/guest/:registry_id" render={() => (
+              <GuestPage guestId={this.state.guestId} />
+            )}/>
             
             <Route exact path="/registries/:registry_id" render={() => (
               <div>

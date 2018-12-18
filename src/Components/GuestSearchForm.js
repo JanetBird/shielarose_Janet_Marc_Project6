@@ -10,7 +10,7 @@ const GuestSearchForm = ({
         searchInput,
         handleSearchChange,
         filteredReg,
-        resetSearchParams
+        handleFilteredClick
     }) => {
       return (
             <div className="guestSearch outerWrapper">
@@ -32,7 +32,7 @@ const GuestSearchForm = ({
                     </Link>
                     <FilteredSearchResults 
                         filteredReg={filteredReg}
-                        resetSearchParams={resetSearchParams}
+                        handleFilteredClick={handleFilteredClick}
                     />
                 </form>
             </div>
