@@ -6,7 +6,6 @@ import SignInPopUp from './Components/SignInPopUp';
 import SignUpForm from './Components/SignUpForm';
 import RegistryDashboard from './Components/RegistryDashboard';
 import Registry from './Components/Registry';
-import SearchNav from './Components/SearchNav';
 import GoBackToRegistriesDashNav from './Components/GoBackToRegistriesDashNav'
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import GuestPage from './Components/GuestPage';
