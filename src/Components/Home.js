@@ -9,7 +9,9 @@ const Home = ({
          <div className="homeBgImg outerWrapper">
             <div className="homePage">
                <h1 className="homeTitle"><span>go</span><span>fund</span><span>my</span><span>wedding</span></h1>
-               <p className="homeDescription">An online wedding registry for couples. <span>Sign up to create your own registry or contribute to an existing one.</span></p>
+               <p className="homeDescription">An online wedding registry for the couple's guests to pay towards the couple's honeymoon, dream home, and other large items</p>
+               <p className="guestAccountTxt">Test and explore the app by using the guest sign in</p>
+               <p className="guestAccount">First name: guest, Email: guest@gmail.com, Password: 12345678</p>
                <button className="homeButton homeSignIn" onClick={toggleSignInPopUp}>Sign In</button>
                <button className="homeButton homeSignUp" onClick={toggleSignUpPopUp}>Sign Up</button>
             </div>

@@ -21,7 +21,7 @@
       &[type=submit] {
          background: $primary;
          border: none;
-         color: black;
+         color: $white;
          @include buttonPress(1.5px, 2px, $gray);
          &:hover {
             background: $gray;

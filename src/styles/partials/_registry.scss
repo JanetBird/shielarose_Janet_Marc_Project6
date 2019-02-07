@@ -12,7 +12,7 @@
    ul {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
       text-align: center;
       padding: 50px;
@@ -75,7 +75,7 @@
    color: $black;
    border-radius: 5px;
    box-shadow: 0 0 20px $gray;
-   margin: 15px 0;
+   margin: 20px;
    transition: all 0.3s ease;
    cursor: pointer;
    &:hover {
@@ -128,9 +128,7 @@
    left: 50%;
    transform: translate(-50%, -50%);
    border-radius: 10px;
-   background: #e6e1dd;  /* fallback for old browsers */
-   background: -webkit-linear-gradient(to top, #FFFFFF, #e6e1dd);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to top, #FFFFFF, #e6e1dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background: $white;
    z-index: 10;
    width: 50%;
    text-align: center;

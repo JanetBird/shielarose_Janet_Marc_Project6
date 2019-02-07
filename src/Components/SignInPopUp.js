@@ -17,6 +17,7 @@ const SignInPopUp = ({
          <div className="signInForm signInUp">
             <form className="signInEmail" >
                <p className="signInUpText">Sign In</p>
+               <p>Test and explore the app by using the guest sign in <span className="guestAccount">First name: guest, Email: guest@gmail.com, Password: 12345678</span></p>
                <FontAwesomeIcon icon={faTimes} onClick={toggleSignInPopUp} className="closeIcon" aria-hidden title="Close sign in pop up"></FontAwesomeIcon>
                <span className="visuallyhidden">Close sign in pop up</span>
       
