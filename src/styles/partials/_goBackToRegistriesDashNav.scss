@@ -1,5 +1,5 @@
 .goBackNavBg {
-   background: lighten($lightgray, 14%);
+   background: lighten($secondary, 15%);
 }
 
 .goBackNav {
@@ -12,7 +12,7 @@
       @include textFont(16);
       color: black;
       &:hover {
-         color: $accent;
+         color: $primary;
       }
    }
 }

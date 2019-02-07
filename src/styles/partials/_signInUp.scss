@@ -1,5 +1,5 @@
 .signInUp {
-   border-radius: 25px;
+   border-radius: 10px;
    max-width: 600px;
    width: 25%;
    margin: 0 auto;
@@ -16,15 +16,15 @@
       padding: 10px 20px;
       margin: 8px 0;
       border: 1px solid $gray;
-      border-radius: 50px;
+      border-radius: 10px;
       transition: all ease 0.1s;
       &[type=submit] {
-         background: $accent;
+         background: $primary;
          border: none;
-         color: white;
+         color: black;
          @include buttonPress(1.5px, 2px, $gray);
          &:hover {
-            background: rgb(126, 1, 44);
+            background: $gray;
             color: white;
          }
       }

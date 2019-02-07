@@ -1,5 +1,5 @@
 .guestPage {
-   background:lighten($lightgray, 14%);
+   background:lighten($secondary, 15%);
    padding-bottom: 75px;
 }
 
@@ -14,15 +14,15 @@
       padding: 10px 20px;
       margin: 8px 0 20px 0;
       border: 1px solid $gray;
-      border-radius: 50px;
+      border-radius: 10px;
       transition: all ease 0.2s;
       &[type=submit] {
-         background: $accent;
+         background: $primary;
          border: none;
          color: white;
          @include buttonPress(2px, 2px, $gray);
          &:hover {
-            background: rgb(126, 1, 44);
+            background: $primary;
          }
       }
    }
@@ -43,13 +43,9 @@
    ul {
       text-align: center;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       flex-wrap: wrap;
       margin: 0 auto 75px auto;
-      padding: 50px 50px 30px 50px;
-      background: white;
-      border-radius: 25px;
-      box-shadow: 0 0 20px $gray;
       min-width: 320px;
    }
    .guestPageInstructions {
@@ -59,7 +55,6 @@
    }
    .ideaContainer {
       position: relative;
-      border: 1px solid $black;
       min-width: 300px;
       width: calc((100% / 3) - 30px);
       border-radius: 5px;
@@ -67,9 +62,9 @@
       background-position: center;
       height: 250px;
       max-height: 300px;
-      box-shadow: 2px 2px 2px $darkgray;
+      box-shadow: 0 0 10px $gray;
       overflow: hidden;
-      margin-bottom: 20px;
+      margin: 20px;
       &:after {
          content:"";      
          position: absolute;
@@ -93,7 +88,6 @@
       h3 {
          @include headingFont(30);
          margin-bottom: 0;
-         text-shadow: 2px 2px 0 rgba(186, 2, 66, 0.3);
       }
       p {
          margin: 0 0 15px 0;

@@ -165,7 +165,6 @@ class GuestPage extends Component {
                 </header> 
           
                 <div className="guestPageIdeas">
-                    <p className="innerWrapper guestPageInstructions">Click the button at the bottom of the screen and fill out the form to contribute to one or more of the items in the wish list below.</p>
                     <ul className="innerWrapper guestPageAllIdeas">
                         {Object.entries(this.state.ideas).length <= 0
                         ?
@@ -192,6 +191,8 @@ class GuestPage extends Component {
                         })
                         }
                     </ul>
+
+                    <p className="innerWrapper guestPageInstructions">Click the button at the bottom of the screen and fill out the form to contribute to one or more of the items in the wish list below.</p>
                 </div>
 
                 { this.state.contributionForm

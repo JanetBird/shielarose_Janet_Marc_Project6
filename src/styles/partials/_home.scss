@@ -11,9 +11,6 @@
    left: 0;
    width: 100%;
    height: 100vh;
-   background-image: url(../assets/bgImg.jpg);
-   background-size: cover;
-   background-position: right;
    filter: contrast(80%) 
 }
 
@@ -24,7 +21,6 @@
    padding-top: 35vh;
    text-align: center;
    color: $darkergray;
-   text-shadow: 1px 1px 2px $darkgray;
    span {
       margin-right: 5px;
       &:last-child {
@@ -41,8 +37,7 @@
 }
 
 .homeButton {
-   border: 2px solid $darkergray;
-   border-radius: 50px;
+   border-radius: 10px;
    padding: 10px 30px;
    background: none;
    color: $darkergray;

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* GENERAL STYLING */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
@@ -189,9 +188,6 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-image: url(../assets/bgImg.jpg);
-  background-size: cover;
-  background-position: right;
   filter: contrast(80%); }
 
 .homeTitle {
@@ -202,21 +198,19 @@ body {
   margin-bottom: 40px;
   padding-top: 35vh;
   text-align: center;
-  color: #242424;
-  text-shadow: 1px 1px 2px #464646; }
+  color: #242424; }
   .homeTitle span {
     margin-right: 5px; }
     .homeTitle span:last-child {
       margin-right: 0; }
     .homeTitle span:nth-child(3) {
-      color: #a9d9b5; }
+      color: lightsteelblue; }
 
 .homeDescription {
   margin-bottom: 50px; }
 
 .homeButton {
-  border: 2px solid #242424;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 10px 30px;
   background: none;
   color: #242424;
@@ -238,9 +232,9 @@ body {
 
 .homeSignUp {
   margin-left: 20px;
-  background: #a9d9b5; }
+  background: lightsteelblue; }
   .homeSignUp:hover {
-    background: #86c997; }
+    background: #8ca9cf; }
 
 nav {
   background: #faf8f8;
@@ -262,13 +256,11 @@ nav {
   font-size: 3rem;
   padding-top: 5px;
   margin: 0;
-  color: #272727;
-  text-shadow: 0.5px 0.5px 0.5px #464646; }
+  color: #272727; }
   .navH1 span {
     margin-right: 2px; }
     .navH1 span:nth-child(3) {
-      color: #a9d9b5;
-      text-shadow: 1.5px 1.5px 1px #272727, -0.1px -0.1px 0.2px #272727; }
+      color: lightsteelblue; }
 
 .second {
   display: none; }
@@ -278,7 +270,7 @@ nav {
   font-size: 18px;
   font-size: 1.8rem;
   border: 1px solid #272727;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 5px 15px;
   background: none;
   color: #272727;
@@ -295,7 +287,7 @@ nav {
     box-shadow: none; }
   .signOut:hover {
     border: 1px solid #272727;
-    background: #00604f;
+    background: #726b8a;
     color: #faf8f8; }
 
 .searchNav {
@@ -305,7 +297,7 @@ nav {
     color: #272727; }
 
 .signInUp {
-  border-radius: 25px;
+  border-radius: 10px;
   max-width: 600px;
   width: 25%;
   margin: 0 auto;
@@ -322,12 +314,12 @@ nav {
     padding: 10px 20px;
     margin: 8px 0;
     border: 1px solid #a3a2a2;
-    border-radius: 50px;
+    border-radius: 10px;
     transition: all ease 0.1s; }
     .signInUp input[type=submit] {
-      background: #ba0242;
+      background: #726b8a;
       border: none;
-      color: white;
+      color: black;
       position: relative;
       top: 0;
       left: 0;
@@ -337,7 +329,7 @@ nav {
         left: 1.5px;
         box-shadow: none; }
       .signInUp input[type=submit]:hover {
-        background: #7e012c;
+        background: #a3a2a2;
         color: white; }
 
 .signInUpText {
@@ -449,7 +441,7 @@ nav {
   text-align: left;
   padding: 5px 15px; }
   .filteredResults li:hover, .filteredResults li:focus, .filteredResults li:active {
-    background: #a9d9b5; }
+    background: lightsteelblue; }
 
 .searchIcon {
   background: none;
@@ -458,12 +450,12 @@ nav {
 
 h2 {
   font-family: 'Libre Baskerville', serif;
-  font-size: 36px;
-  font-size: 3.6rem;
+  font-size: 28px;
+  font-size: 2.8rem;
   margin: 0 0 55px 0; }
 
 .registryDashboard {
-  background: #f7f7f7; }
+  background: #e6ecf5; }
   .registryDashboard p.outerWrapper {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -480,32 +472,21 @@ h2 {
   justify-content: center;
   align-items: center; }
 
-.registryContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border-radius: 25px;
-  padding: 50px 50px 0 50px;
-  box-shadow: 0px 0px 20px #a3a2a2;
-  background: #faf8f8;
-  min-width: 280px;
-  width: 100%; }
-
 .registryButton {
   display: block;
   margin: 20px auto 0 auto;
   line-height: 1;
-  padding: 0 35px;
+  padding: 0 25px;
   border: none;
-  border-radius: 50px;
-  background: #ba0242;
+  border-radius: 10px;
+  background: #a3a2a2;
   color: #faf8f8;
   font-family: 'Roboto', sans-serif;
   font-size: 60px;
   font-size: 6rem;
   box-shadow: 2px 2px 2px #a3a2a2; }
   .registryButton:hover {
-    background: #a10239;
+    background: #726b8a;
     color: #faf8f8; }
 
 .registryIcon {
@@ -520,9 +501,9 @@ h2 {
 .registryForm {
   text-align: center;
   width: 80%;
-  border-radius: 25px;
+  border-radius: 10px;
   margin: 50px auto;
-  padding: 40px 75px;
+  padding: 50px 35px;
   background: white;
   box-shadow: 0px 0px 20px #a3a2a2;
   z-index: 100; }
@@ -535,11 +516,11 @@ h2 {
     padding: 10px 20px;
     margin: 8px 0;
     border: 1px solid #a3a2a2;
-    border-radius: 50px;
+    border-radius: 10px;
     transition: all ease 0.05s; }
     .registryForm input[type=submit] {
       margin-top: 25px;
-      background: #ba0242;
+      background: #726b8a;
       border: none;
       color: white;
       position: relative;
@@ -551,7 +532,7 @@ h2 {
         left: 2px;
         box-shadow: none; }
       .registryForm input[type=submit]:hover {
-        background: #880130;
+        background: #5a556d;
         color: white; }
     .registryForm input::placeholder {
       font-family: 'Roboto', sans-serif;
@@ -562,18 +543,15 @@ h2 {
 
 .registry {
   position: relative;
-  min-width: 250px;
+  min-width: 300px;
   width: calc((100% / 3) - 30px);
-  height: 250px;
+  height: 200px;
   color: #272727;
-  background: url(../assets/bgImg.jpg);
-  background-position: center;
-  background-size: cover;
-  border: 1px solid black;
+  background: #faf8f8;
   border-radius: 5px;
   display: inline-block;
   margin-bottom: 50px;
-  box-shadow: 2px 2px 2px #a3a2a2;
+  box-shadow: 0px 0px 20px #a3a2a2;
   transition: all 0.3s ease; }
   .registry:hover {
     transform: scale(1.05); }
@@ -598,8 +576,6 @@ h2 {
     background: rgba(255, 255, 255, 0.4);
     transition: all 0.3s ease;
     border-radius: 5px; }
-    .registryLink:hover {
-      background: linear-gradient(to top, #faf8f8, rgba(186, 2, 66, 0.2)); }
   .registryDelete {
     position: absolute;
     top: 10px;
@@ -624,7 +600,7 @@ h2 {
     margin-right: 10px;
     border: 3px solid #242424;
     border-radius: 50px;
-    background: #a9d9b5;
+    background: lightsteelblue;
     transition: all 0.05s linear; }
     .deleteAlert button:active, .deleteAlert button:focus {
       top: 2px;
@@ -638,7 +614,7 @@ h2 {
   background: rgba(0, 0, 0, 0.8); }
 
 .goBackNavBg {
-  background: #f7f7f7; }
+  background: #e6ecf5; }
 
 .goBackNav {
   text-align: right;
@@ -651,16 +627,11 @@ h2 {
     font-size: 1.6rem;
     color: black; }
     .goBackNavLink:hover {
-      color: #ba0242; }
+      color: #726b8a; }
 
 .registryHeader {
-  background-image: url(../assets/flowers.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
   text-align: center;
   padding: 90px;
-  background-color: white;
   position: relative; }
   .registryHeader:after {
     content: "";
@@ -668,8 +639,7 @@ h2 {
     top: 0;
     bottom: 0;
     right: 0;
-    left: 0;
-    background: rgba(255, 255, 255, 0.7); }
+    left: 0; }
   .registryHeader .headerContent {
     position: relative;
     z-index: 1;
@@ -679,10 +649,9 @@ h2 {
     font-size: 50px;
     font-size: 5rem;
     margin: 0;
-    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
     line-height: 1.5; }
     .registryHeader h2::after {
-      content: "§";
+      content: "|";
       display: block;
       -webkit-transform: rotate(90deg);
       -moz-transform: rotate(90deg);
@@ -696,7 +665,7 @@ h2 {
     margin: 10px; }
 
 .guestPage {
-  background: #f7f7f7;
+  background: #e6ecf5;
   padding-bottom: 75px; }
 
 .contributionAmount {
@@ -710,11 +679,11 @@ h2 {
     padding: 10px 20px;
     margin: 8px 0 20px 0;
     border: 1px solid #a3a2a2;
-    border-radius: 50px;
+    border-radius: 10px;
     transition: all ease 0.2s; }
     .contributionAmount input[type=submit],
     .contributionAmount select[type=submit] {
-      background: #ba0242;
+      background: #726b8a;
       border: none;
       color: white;
       position: relative;
@@ -729,7 +698,7 @@ h2 {
         box-shadow: none; }
       .contributionAmount input[type=submit]:hover,
       .contributionAmount select[type=submit]:hover {
-        background: #7e012c; }
+        background: #726b8a; }
   .contributionAmount label {
     display: block; }
   .contributionAmount select {
@@ -745,13 +714,9 @@ h2 {
   .guestPageIdeas ul {
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto 75px auto;
-    padding: 50px 50px 30px 50px;
-    background: white;
-    border-radius: 25px;
-    box-shadow: 0 0 20px #a3a2a2;
     min-width: 320px; }
   .guestPageIdeas .guestPageInstructions {
     padding: 50px 0;
@@ -759,7 +724,6 @@ h2 {
     width: 50%; }
   .guestPageIdeas .ideaContainer {
     position: relative;
-    border: 1px solid #272727;
     min-width: 300px;
     width: calc((100% / 3) - 30px);
     border-radius: 5px;
@@ -767,9 +731,9 @@ h2 {
     background-position: center;
     height: 250px;
     max-height: 300px;
-    box-shadow: 2px 2px 2px #464646;
+    box-shadow: 0 0 10px #a3a2a2;
     overflow: hidden;
-    margin-bottom: 20px; }
+    margin: 20px; }
     .guestPageIdeas .ideaContainer:after {
       content: "";
       position: absolute;
@@ -792,8 +756,7 @@ h2 {
       font-family: 'Libre Baskerville', serif;
       font-size: 30px;
       font-size: 3rem;
-      margin-bottom: 0;
-      text-shadow: 2px 2px 0 rgba(186, 2, 66, 0.3); }
+      margin-bottom: 0; }
     .guestPageIdeas .ideaContainer p {
       margin: 0 0 15px 0; }
     .guestPageIdeas .ideaContainer span {
@@ -803,40 +766,36 @@ h2 {
 
 .registryDiv {
   position: relative;
-  background: #f7f7f7; }
+  background: #e6ecf5; }
 
 .ideas main {
   padding-bottom: 100px; }
   .ideas main h2 {
     text-align: center;
-    margin: 0;
-    padding: 50px 0; }
+    margin: 0; }
   .ideas main ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    border-radius: 25px;
     text-align: center;
-    padding: 50px;
-    background: white;
-    box-shadow: 0 0 20px #a3a2a2; }
+    padding: 50px; }
 
 .ideaButton {
   display: block;
   margin: 20px auto 0 auto;
   line-height: 1;
-  padding: 0 35px;
+  padding: 0 25px;
   border: none;
-  border-radius: 50px;
-  background: #ba0242;
+  border-radius: 10px;
+  background: #726b8a;
   color: #faf8f8;
   font-family: 'Roboto', sans-serif;
   font-size: 60px;
   font-size: 6rem;
   box-shadow: 2px 2px 2px #a3a2a2; }
   .ideaButton:hover {
-    background: #a10239;
+    background: #66607c;
     color: #faf8f8; }
 
 .ideasForm {
@@ -847,10 +806,10 @@ h2 {
     padding: 10px 20px;
     margin: 8px 0 20px 0;
     border: 1px solid #a3a2a2;
-    border-radius: 50px;
+    border-radius: 10px;
     transition: all ease 0.2s; }
     .ideasForm input[type=submit], .ideasForm select[type=submit] {
-      background: #ba0242;
+      background: #726b8a;
       border: none;
       color: white;
       position: relative;
@@ -862,7 +821,7 @@ h2 {
         left: 2px;
         box-shadow: none; }
       .ideasForm input[type=submit]:hover, .ideasForm select[type=submit]:hover {
-        background: #7e012c; }
+        background: #726b8a; }
   .ideasForm label {
     display: block; }
   .ideasForm select {
@@ -875,13 +834,12 @@ h2 {
 
 .ideaListItem {
   position: relative;
-  width: calc((100% / 3) - 30px);
-  min-width: 250px;
-  height: 250px;
+  width: calc((100% / 3.5) - 30px);
+  min-width: 150px;
+  height: 400px;
   color: #272727;
-  border: 1px solid black;
   border-radius: 5px;
-  box-shadow: 2px 2px 2px #a3a2a2;
+  box-shadow: 0 0 20px #a3a2a2;
   margin: 15px 0;
   transition: all 0.3s ease;
   cursor: pointer; }
@@ -890,7 +848,7 @@ h2 {
     top: 0;
     left: 0;
     box-shadow: 2px 2px 2px #a3a2a2;
-    transform: scale(1.02); }
+    transform: scale(1.05); }
     .ideaListItem:hover:active, .ideaListItem:hover:focus {
       top: 2px;
       left: 2px;
@@ -925,8 +883,7 @@ h2 {
       font-family: 'Libre Baskerville', serif;
       font-size: 26px;
       font-size: 2.6rem;
-      margin: 0;
-      text-shadow: 3px 3px 0 rgba(186, 2, 66, 0.2); }
+      margin: 0; }
 
 .ideaDelete {
   position: absolute;
@@ -939,7 +896,7 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 25px;
+  border-radius: 10px;
   background: #e6e1dd;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #FFFFFF, #e6e1dd);
@@ -958,10 +915,9 @@ h2 {
     font-family: 'Libre Baskerville', serif;
     font-size: 45px;
     font-size: 4.5rem;
-    margin: 0;
-    text-shadow: 3px 3px 0 rgba(186, 2, 66, 0.2); }
+    margin: 0; }
     .ideaPopUp h2::after {
-      content: "§";
+      content: "|";
       display: block;
       -webkit-transform: rotate(90deg);
       -moz-transform: rotate(90deg);
@@ -989,7 +945,7 @@ h2 {
     border-bottom: 1px solid gray;
     line-height: 2.5; }
     .ideaPopUp .contributor span {
-      color: #ba0242; }
+      color: #726b8a; }
   .ideaPopUp .noContributors {
     margin-bottom: 0; }
   .ideaPopUp span {
@@ -1034,51 +990,8 @@ h2 {
   max-width: 50px;
   margin-bottom: 25px; }
 
-.wedding {
-  background: url("../assets/wedding.jpg"); }
-
-.honeymoon {
-  background: url("../assets/honeymoon.jpg"); }
-
-.travel {
-  background: url("../assets/travel.jpg"); }
-
-.concert {
-  background: url("../assets/concert.jpg"); }
-
-.sports {
-  background: url("../assets/sports.jpg"); }
-
-.house {
-  background: url("../assets/house.jpg"); }
-
-.rent {
-  background: url("../assets/rent.jpg"); }
-
-.dependents {
-  background: url("../assets/dependents.jpg"); }
-
-.food {
-  background: url("../assets/food.jpg"); }
-
-.wellbeing {
-  background: url("../assets/wellness.jpg"); }
-
-.retirement {
-  background: url("../assets/retirement.jpg"); }
-
-.debt {
-  background: url("../assets/debt.jpg"); }
-
-.other {
-  background: url("../assets/other.jpg"); }
-
-.ideaListItem {
-  background-size: cover;
-  background-position: center; }
-
 .searchPage {
-  background: #f7f7f7;
+  background: #e6ecf5;
   min-height: 100vh; }
 
 .searchList {
@@ -1088,6 +1001,7 @@ h2 {
     font-size: 24px;
     font-size: 2.4rem; }
   .searchList .registryLink {
+    background: #faf8f8;
     position: relative;
     top: 0;
     left: 0;
@@ -1099,14 +1013,13 @@ h2 {
     padding: 5px 35px;
     width: 100%;
     display: inline-block;
-    background: none;
     box-shadow: 0px 0px 10px #a3a2a2; }
     .searchList .registryLink:active, .searchList .registryLink:focus {
       top: 2px;
       left: 2px;
       box-shadow: none; }
     .searchList .registryLink:hover {
-      background: #f0f8f2;
+      background: #f8fafc;
       box-shadow: 0px 0px 10px #242424; }
     .searchList .registryLink:last-child {
       margin-bottom: 50px; }
@@ -1330,7 +1243,7 @@ footer {
   .navH1 {
     display: none; }
   nav {
-    background: #dbefe0; }
+    background: #e2eaf3; }
   ul {
     width: 100%;
     justify-content: space-around;

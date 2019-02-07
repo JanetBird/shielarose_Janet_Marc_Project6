@@ -21,12 +21,10 @@ nav {
    padding-top: 5px;
    margin: 0;
    color: $black;
-   text-shadow: 0.5px 0.5px 0.5px $darkgray;
    span {
       margin-right: 2px;
       &:nth-child(3) {
          color: $secondary;
-         text-shadow: 1.5px 1.5px 1px $black, -0.1px -0.1px 0.2px $black;
       }
    }
 }
@@ -38,7 +36,7 @@ nav {
 .signOut {
    @include textFont(18);
    border: 1px solid $black;
-   border-radius: 50px;
+   border-radius: 10px;
    padding: 5px 15px;
    background: none;
    color: $black;
