@@ -178,7 +178,8 @@ class Registry extends Component {
                                 ?
                                 Object.entries(this.state.ideas).map(idea => {
                                     return (
-                                        <li key={idea[0]} className={`ideaListItem ${idea[1].ideaCategory}`}>
+                                        <li key={idea[0]} className={`ideaListItem`}>
+                                            <div className={idea[1].ideaCategory}></div>
                                             <Ideas
                                                 ideaName={idea[1].ideaName}
                                                 handleClickIdea={this.handleClickIdea}

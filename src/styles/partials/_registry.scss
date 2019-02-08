@@ -1,13 +1,13 @@
 .registryDiv {
    position: relative;
-   background:lighten($secondary, 15%);
+   background: $white;
 }
 
 .ideas main {
    padding-bottom: 100px;
    h2 {
+      margin: 100px 0 0 0;
       text-align: center;
-      margin: 0;
    }
    ul {
       display: flex;
@@ -26,12 +26,12 @@
    padding: 0 25px;
    border: none;
    border-radius: 10px;
-   background: $primary;
+   background: $gray;
    color: $white;
    @include textFont(60);
    box-shadow: 2px 2px 2px $gray;
    &:hover {
-      background: darken($primary, 5%);
+      background: $primary;
       color: $white;
    }
 }
@@ -68,12 +68,15 @@
 }
 
 .ideaListItem {
+   background: $white;
    position: relative; 
+   display: flex;
+   flex-direction: column;
    width: calc((100% / 3.5) - 30px);
    min-width: 150px;
    height: 400px;
-   color: $black;
-   border-radius: 5px;
+   color: $lightgray;
+   border-radius: 20px;
    box-shadow: 0 0 20px $gray;
    margin: 20px;
    transition: all 0.3s ease;
@@ -82,35 +85,16 @@
      @include buttonPress(2px, 2px, $gray);
      transform: scale(1.05);   
    }
-   &:after {
-      content:"";      
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      border-radius: 5px;
-      background: rgba(255, 255, 255, 0.6);
-   }
+
    .ideaLink {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
-   }
-   .ideaContent {
-      @include headingFont(35);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
+      padding: 10px 20px;
       color: $black;
       z-index: 1;
       h3 {
-         @include headingFont(26);
+         @include textFont(20);
+         font-weight: 900;
          margin: 0;
+         text-align: left;
       }
    }
 }
@@ -217,7 +201,7 @@
 .noGiftIdeas,
 .noWishList {
    h3 {
-      @include textFont(35);
+      @include textFont(25);
       margin-top: 10vh;
       margin-bottom: 0;
    }
@@ -227,47 +211,107 @@
    }
 }
 
-// .wedding {
-//    background: url("../assets/wedding.jpg");
-// }
-// .honeymoon {
-//    background: url("../assets/honeymoon.jpg");
-// }
-// .travel {
-//    background: url("../assets/travel.jpg");
-// }
-// .concert {
-//    background: url("../assets/concert.jpg");
-// }
-// .sports {
-//    background: url("../assets/sports.jpg");
-// }
-// .house {
-//    background: url("../assets/house.jpg");
-// }
-// .rent {
-//    background: url("../assets/rent.jpg");
-// }
-// .dependents {
-//    background: url("../assets/dependents.jpg");
-// }
-// .food {
-//    background: url("../assets/food.jpg");
-// }
-// .wellbeing {
-//    background: url("../assets/wellness.jpg");
-// }
-// .retirement {
-//    background: url("../assets/retirement.jpg");
-// }
-// .debt {
-//    background: url("../assets/debt.jpg");
-// }
-// .other {
-//    background: url("../assets/other.jpg");
-// }
-
-// .ideaListItem {
-//    background-size: cover;
-//    background-position: center;
-// }
+.wedding {
+   background: url("../assets/wedding.jpg");
+   height: 70%;
+   background-size: cover;
+   border-radius: 20px;
+   margin: 10px;
+   filter: grayscale(100%);
+}
+.honeymoon {
+   background: url("../assets/honeymoon.jpg");
+   margin: 10px;
+   height: 70%;
+   background-size: cover;
+   border-radius: 20px;
+   filter: grayscale(100%);
+}
+.travel {
+   background: url("../assets/travel.jpg");
+   height: 70%;
+   background-size: cover;
+   border-radius: 20px;
+   margin: 10px;
+   filter: grayscale(100%);
+}
+.concert {
+   background: url("../assets/concert.jpg");
+   height: 70%;
+   background-size: cover;
+   border-radius: 20px;
+   margin: 10px;
+   filter: grayscale(100%);
+}
+.sports {
+   background: url("../assets/sports.jpg");
+   height: 70%;
+   background-size: cover;
+   border-radius: 20px;
+   margin: 10px;
+   filter: grayscale(100%);
+}
+.house {
+   background: url("../assets/house.jpg");
+   height: 70%;
+   background-size: cover;
+   border-radius: 20px;
+   margin: 10px;
+   filter: grayscale(100%);
+}
+.rent {
+   background: url("../assets/rent.jpg");
+   height: 70%;
+   background-size: cover;
+   border-radius: 20px;
+   margin: 10px;
+   filter: grayscale(100%);
+}
+.dependents {
+   background: url("../assets/dependents.jpg");
+   height: 70%;
+   background-size: cover;
+   border-radius: 20px;
+   margin: 10px;
+   filter: grayscale(100%);
+}
+.food {
+   background: url("../assets/food.jpg");
+   height: 70%;
+   background-size: cover;
+   border-radius: 20px;
+   margin: 10px;
+   filter: grayscale(100%);
+}
+.wellbeing {
+   background: url("../assets/wellness.jpg");
+   height: 70%;
+   background-size: cover;
+   border-radius: 20px;
+   margin: 10px;
+   filter: grayscale(100%);
+}
+.retirement {
+   background: url("../assets/retirement.jpg");
+   height: 70%;
+   background-size: cover;
+   border-radius: 20px;
+   margin: 10px;
+   filter: grayscale(100%);
+}
+.debt {
+   background: url("../assets/debt.jpg");
+   height: 70%;
+   background-size: cover;
+   border-radius: 20px;
+   margin: 10px;
+   filter: grayscale(100%);
+}
+.other {
+   background: url("../assets/other.jpg");
+   height: 70%;
+   background-size: cover;
+   border-radius: 20px;
+   margin: 10px;
+   filter: grayscale(100%);
+}

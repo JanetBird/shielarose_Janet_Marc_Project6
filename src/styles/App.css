@@ -635,8 +635,9 @@ h2 {
       color: #726b8a; }
 
 .registryHeader {
+  background: #e6ecf5;
   text-align: center;
-  padding: 90px;
+  padding: 50px;
   position: relative; }
   .registryHeader:after {
     content: "";
@@ -650,24 +651,16 @@ h2 {
     z-index: 1;
     width: 80%; }
   .registryHeader h2 {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 50px;
-    font-size: 5rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    font-size: 8rem;
     margin: 0;
     line-height: 1.5; }
-    .registryHeader h2::after {
-      content: "|";
-      display: block;
-      -webkit-transform: rotate(90deg);
-      -moz-transform: rotate(90deg);
-      -o-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      transform: rotate(90deg);
-      opacity: 0.2;
-      font-size: 0.5em;
-      margin-top: 15px; }
   .registryHeader p {
-    margin: 10px; }
+    margin: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    font-size: 2.4rem; }
 
 .guestPage {
   background: #e6ecf5;
@@ -771,13 +764,13 @@ h2 {
 
 .registryDiv {
   position: relative;
-  background: #e6ecf5; }
+  background: #faf8f8; }
 
 .ideas main {
   padding-bottom: 100px; }
   .ideas main h2 {
-    text-align: center;
-    margin: 0; }
+    margin: 100px 0 0 0;
+    text-align: center; }
   .ideas main ul {
     display: flex;
     flex-wrap: wrap;
@@ -793,14 +786,14 @@ h2 {
   padding: 0 25px;
   border: none;
   border-radius: 10px;
-  background: #726b8a;
+  background: #a3a2a2;
   color: #faf8f8;
   font-family: 'Roboto', sans-serif;
   font-size: 60px;
   font-size: 6rem;
   box-shadow: 2px 2px 2px #a3a2a2; }
   .ideaButton:hover {
-    background: #66607c;
+    background: #726b8a;
     color: #faf8f8; }
 
 .ideasForm {
@@ -838,12 +831,15 @@ h2 {
     background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat 98% white; }
 
 .ideaListItem {
+  background: #faf8f8;
   position: relative;
+  display: flex;
+  flex-direction: column;
   width: calc((100% / 3.5) - 30px);
   min-width: 150px;
   height: 400px;
-  color: #272727;
-  border-radius: 5px;
+  color: lightgray;
+  border-radius: 20px;
   box-shadow: 0 0 20px #a3a2a2;
   margin: 20px;
   transition: all 0.3s ease;
@@ -858,37 +854,17 @@ h2 {
       top: 2px;
       left: 2px;
       box-shadow: none; }
-  .ideaListItem:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.6); }
   .ideaListItem .ideaLink {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1; }
-  .ideaListItem .ideaContent {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 35px;
-    font-size: 3.5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    padding: 10px 20px;
     color: #272727;
     z-index: 1; }
-    .ideaListItem .ideaContent h3 {
-      font-family: 'Libre Baskerville', serif;
-      font-size: 26px;
-      font-size: 2.6rem;
-      margin: 0; }
+    .ideaListItem .ideaLink h3 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-size: 2rem;
+      font-weight: 900;
+      margin: 0;
+      text-align: left; }
 
 .ideaDelete {
   position: absolute;
@@ -980,8 +956,8 @@ h2 {
 .noGiftIdeas h3,
 .noWishList h3 {
   font-family: 'Roboto', sans-serif;
-  font-size: 35px;
-  font-size: 3.5rem;
+  font-size: 25px;
+  font-size: 2.5rem;
   margin-top: 10vh;
   margin-bottom: 0; }
 
@@ -989,6 +965,110 @@ h2 {
 .noWishList svg {
   max-width: 50px;
   margin-bottom: 25px; }
+
+.wedding {
+  background: url("../assets/wedding.jpg");
+  height: 70%;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 10px;
+  filter: grayscale(100%); }
+
+.honeymoon {
+  background: url("../assets/honeymoon.jpg");
+  margin: 10px;
+  height: 70%;
+  background-size: cover;
+  border-radius: 20px;
+  filter: grayscale(100%); }
+
+.travel {
+  background: url("../assets/travel.jpg");
+  height: 70%;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 10px;
+  filter: grayscale(100%); }
+
+.concert {
+  background: url("../assets/concert.jpg");
+  height: 70%;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 10px;
+  filter: grayscale(100%); }
+
+.sports {
+  background: url("../assets/sports.jpg");
+  height: 70%;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 10px;
+  filter: grayscale(100%); }
+
+.house {
+  background: url("../assets/house.jpg");
+  height: 70%;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 10px;
+  filter: grayscale(100%); }
+
+.rent {
+  background: url("../assets/rent.jpg");
+  height: 70%;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 10px;
+  filter: grayscale(100%); }
+
+.dependents {
+  background: url("../assets/dependents.jpg");
+  height: 70%;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 10px;
+  filter: grayscale(100%); }
+
+.food {
+  background: url("../assets/food.jpg");
+  height: 70%;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 10px;
+  filter: grayscale(100%); }
+
+.wellbeing {
+  background: url("../assets/wellness.jpg");
+  height: 70%;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 10px;
+  filter: grayscale(100%); }
+
+.retirement {
+  background: url("../assets/retirement.jpg");
+  height: 70%;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 10px;
+  filter: grayscale(100%); }
+
+.debt {
+  background: url("../assets/debt.jpg");
+  height: 70%;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 10px;
+  filter: grayscale(100%); }
+
+.other {
+  background: url("../assets/other.jpg");
+  height: 70%;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 10px;
+  filter: grayscale(100%); }
 
 .searchPage {
   background: #e6ecf5;

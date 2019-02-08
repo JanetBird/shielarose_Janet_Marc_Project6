@@ -13,9 +13,7 @@ const Ideas = ({
     return(
             <div className="idea"> 
                 <div className="ideaLink" onClick={() => handleClickIdea(ideaKey)}>
-                    <div className="ideaContent">
-                        <h3>{ideaName}</h3>
-                    </div>
+                    <h3>{ideaName}</h3>
                 </div>
                 <div className="ideaDelete">
                     <FontAwesomeIcon icon={faTimes} aria-hidden title="Delete Idea" onClick={() => handleDeleteIdea(ideaKey)}/>

@@ -1,7 +1,7 @@
 .registryHeader {
-   
+   background: lighten($secondary, 15%);
    text-align: center;
-   padding: 90px;
+   padding: 50px;
    position: relative;
    &:after {
       content: "";
@@ -17,23 +17,12 @@
       width: 80%;
    }
    h2 {
-      @include headingFont(50);
+      @include serifFont(80);
       margin: 0;
       line-height: 1.5;
-      &::after {
-         content: "|";
-         display: block;
-         -webkit-transform: rotate(90deg);
-         -moz-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
-         -ms-transform: rotate(90deg);
-         transform: rotate(90deg);
-         opacity: 0.2;
-         font-size: 0.5em;
-         margin-top: 15px;
-      }
    }
    p {
       margin: 10px;
+      @include serifFont(24);
    }
 }

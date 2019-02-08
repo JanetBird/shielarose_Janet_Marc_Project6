@@ -10,6 +10,14 @@
    font-size: ($size/10) * 1rem;
 }
 
+@mixin serifFont($size){
+   font-family: 'Dancing Script', cursive;
+   font-size: $size * 1px;
+   font-size: ($size/10) * 1rem;
+}
+
+
+
 // button press effect - use the size of the box shadow
 @mixin buttonPress($size, $blur, $color){
    position: relative;
